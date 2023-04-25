@@ -1007,7 +1007,7 @@ def main():
     anakin = create_person(keys, swapi_anakin, wookiee_anakin, wookiee_planets) 
     utl.write_json('stu-anakin_skywalker.json', anakin)
 
-    swapi_obi_wan = get_swapi_resource(SWAPI_PEOPLE[0], {"search”: ”obi-wan kenobi"}) 
+    swapi_obi_wan = get_swapi_resource(SWAPI_PEOPLE, {"search": "obi-wan kenobi"}) 
     wookiee_obi_wan = utl.get_nested_dict(wookiee_people, 'name', 'Obi-Wan Kenobi') 
     obi_wan = create_person(keys, swapi_obi_wan, wookiee_obi_wan, wookiee_planets) 
     utl.write_json('stu-obi_wan_kenobi.json', obi_wan)
