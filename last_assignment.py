@@ -964,19 +964,18 @@ def main():
     assert utl.to_year_era('Chewbacca') == 'Chewbacca'
 
     # 10.11.4
-    swapi_r2_d2 = get_swapi_resource(SWAPI_ENDPOINT[0], {"search": "R2-D2"}, ", ") 
+    swapi_r2_d2 = get_swapi_resource(SWAPI_PEOPLE, {"search": "R2-D2"}) 
     wookiee_droids = utl.read_json('data-wookieepedia_droids.json')
-    wookiee_r2_d2 = utl.get_nested_dict(wookiee_droids, 'name', swapi_r2_d2['name']) 
+    wookiee_r2_d2 = utl.get_nested_dict(wookiee_droids,'name',swapi_r2_d2['name']) 
     r2_d2 = create_droid(keys, swapi_r2_d2, wookiee_r2_d2)
     utl.write_json('stu-r2_d2.json', r2_d2) 
-
 
 
     # 10.12 Challenge 12
 
     # 10.12.2
     # TODO Call functions; write to file
-    swapi_human_species = get_swapi_resource(SWAPI_SPECIES, {"search", "human"})
+    swapi_human_species = get_swapi_resource(SWAPI_SPECIES, {"search": "human"})
     human_species = create_species(keys, swapi_human_species) 
     utl.write_json('human_species.json', human_species)
 
@@ -1086,3 +1085,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+https://swapi.py4e.com/api
