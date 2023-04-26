@@ -1,0 +1,34 @@
+{
+  "url": "https://starwars.fandom.com/wiki/Yoda",
+  "name": "Yoda",
+  "birth_date": {
+    "year": 896,
+    "era": "BBY"
+  },
+  "height_cm": 66.0,
+  "mass_kg": 17.0,
+  "homeworld": {
+    "url": "https://swapi.py4e.com/api/planets/28/",
+    "name": null,
+    "region": null,
+    "sector": null,
+    "suns": null,
+    "moons": null,
+    "orbital_period_days": 0.0,
+    "diameter_km": 0,
+    "gravity_std": null,
+    "climate": null,
+    "terrain": null,
+    "population": null
+  },
+  "species": {
+    "url": "https://swapi.py4e.com/api/species/6/",
+    "name": "Yoda's species",
+    "classification": "mammal",
+    "designation": "sentient",
+    "average_lifespan_yrs": 900,
+    "average_height_cm": 66.0,
+    "language": "Galactic basic"
+  },
+  "force_sensitive": true
+}
